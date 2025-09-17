@@ -18,7 +18,15 @@ When("the user adds a candidate", async function () {
   await recruitmentPage.addCandidate(testData.candidate.fName,testData.candidate.lName,testData.candidate.email);
 });
 
-Then("the candidate should be added successfully", async function () {
+Then("verify candidate is added successfully", async function () {
   await recruitmentPage.verifyCandidate(testData.candidate.fName);
 });
 
+When("the user adds the vacancies", async function () {
+  await recruitmentPage.click("a:has-text('Candidates')");
+  await recruitmentPage.addCandidate(testData.candidate.fName,testData.candidate.lName,testData.candidate.email);
+});
+
+Then("verify vacancies is added successfully", async function () {
+  await recruitmentPage.verifyCandidate(testData.candidate.fName);
+});

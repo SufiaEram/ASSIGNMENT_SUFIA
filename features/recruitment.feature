@@ -5,13 +5,13 @@ Feature: Recruitment functionality
   Scenario: Add a new candidate successfully
     Given user logged in and navigate to recruitment
     When the user adds a candidate
-    Then the candidate should be added successfully
+    Then verify candidate is added successfully
 
-#  @sanity @positive
-#   Scenario: Add a new Vacancies successfully
-#     Given user logged in and navigate to recruitment
-#     When the user adds the vacancies
-#     Then vacancies is added successfully
+ @sanity @positive
+  Scenario: Add a new Vacancies successfully
+    Given user logged in and navigate to recruitment
+    When the user adds the vacancies
+    Then verify vacancies is added successfully
 
 #   @regression @negative
 #   Scenario: Add candidate with missing mandatory fields

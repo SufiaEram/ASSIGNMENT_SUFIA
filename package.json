@@ -1,0 +1,28 @@
+{
+  "name": "safeguard-assignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js --require ./features/step-definitions/**/*.js --require ./src/hooks/*.js "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SufiaEram/Safeguard-assignment.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/SufiaEram/Safeguard-assignment/issues"
+  },
+  "homepage": "https://github.com/SufiaEram/Safeguard-assignment#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "@types/node": "^24.5.0"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "^12.2.0"
+  }
+}

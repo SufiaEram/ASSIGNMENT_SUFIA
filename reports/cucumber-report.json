@@ -1,0 +1,88 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "recruitment-functionality;add-a-new-candidate-successfully",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Add a new candidate successfully",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 544503500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "user logged in and navigate to recruitment",
+            "match": {
+              "location": "features\\step-definitions\\recruitment.steps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4052770500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "the user adds a candidate",
+            "match": {
+              "location": "features\\step-definitions\\recruitment.steps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2305800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "the candidate should be added successfully",
+            "match": {
+              "location": "features\\step-definitions\\recruitment.steps.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3757799
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 187964100
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@sanity",
+            "line": 4
+          },
+          {
+            "name": "@positive",
+            "line": 4
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "recruitment-functionality",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Recruitment functionality",
+    "tags": [],
+    "uri": "features\\recruitment.feature"
+  }
+]

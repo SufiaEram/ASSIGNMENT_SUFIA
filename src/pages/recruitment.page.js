@@ -52,7 +52,6 @@ class RecruitmentPage extends BasePage {
   async verifyCandidate(expectedName){
   const nameLocator = this.page.locator("//label[text()='Name']/../following-sibling::div/p");
   await expect(nameLocator).toHaveText(new RegExp(expectedName));
-  console.log(expectedName);
   }
 
   async getErrorMessage() {

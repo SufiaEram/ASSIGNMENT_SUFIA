@@ -4,57 +4,57 @@
     "elements": [
       {
         "description": "",
-        "id": "recruitment-functionality;add-a-new-vacancies-successfully",
+        "id": "recruitment-functionality;add-candidate-with-missing-mandatory-fields",
         "keyword": "Scenario",
-        "line": 11,
-        "name": "Add a new Vacancies successfully",
+        "line": 17,
+        "name": "Add candidate with missing mandatory fields",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 517027800
+              "duration": 664369999
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 12,
+            "line": 18,
             "name": "user logged in and navigate to recruitment",
             "match": {
               "location": "features\\step-definitions\\recruitment.steps.js:9"
             },
             "result": {
-              "status": "failed",
-              "duration": 5025805000,
-              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\Shamim\\Projects\\Safeguard-assignment\\node_modules\\@cucumber\\cucumber\\lib\\time.js:64:20)\n    at listOnTimeout (node:internal/timers:588:17)\n    at process.processTimers (node:internal/timers:523:7)"
+              "status": "passed",
+              "duration": 4368063699
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 13,
-            "name": "the user adds the vacancies",
+            "line": 19,
+            "name": "the recruiter adds a candidate without mandatory fields",
             "match": {
-              "location": "features\\step-definitions\\recruitment.steps.js:25"
+              "location": "features\\step-definitions\\recruitment.steps.js:42"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 2007039999
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 14,
-            "name": "verify vacancies is added successfully",
+            "line": 20,
+            "name": "an error message 'required' should be displayed",
             "match": {
-              "location": "features\\step-definitions\\recruitment.steps.js:30"
+              "location": "features\\step-definitions\\recruitment.steps.js:51"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "failed",
+              "duration": 1559099,
+              "error_message": "TypeError: Cannot read properties of undefined (reading 'locator')\n    at World.<anonymous> (C:\\Users\\Shamim\\Projects\\Safeguard-assignment\\features\\step-definitions\\recruitment.steps.js:56:19)"
             }
           },
           {
@@ -62,22 +62,18 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 219962900
+              "duration": 264438799
             }
           }
         ],
         "tags": [
           {
-            "name": "@sanity",
-            "line": 10
+            "name": "@regression",
+            "line": 16
           },
           {
-            "name": "@positive",
-            "line": 10
-          },
-          {
-            "name": "@current",
-            "line": 10
+            "name": "@negative",
+            "line": 16
           }
         ],
         "type": "scenario"

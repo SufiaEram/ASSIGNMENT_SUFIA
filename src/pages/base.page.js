@@ -38,13 +38,23 @@ async selectFromAutocomplete(selector, text) {
   await input.fill(text);
 
   // Wait a tiny bit for suggestions to appear
-  await this.page.waitForTimeout(500);
+  await this.page.waitForTimeout(5000);
 
   // Navigate to the first suggestion and select
   await input.press("ArrowDown");
+  await this.page.waitForTimeout(500);
   await input.press("Enter");
 }
 
+async validateErrorMsg(fieldLabel, expectedMsg){
+
+  const fieldGroup = this.page.locator('div.oxd-input-group:has(label:text("${fieldLabel}"))');
+  const error = fieldGroup.locator("span.oxd-input-field-error-message");
+  await error.waitFor({ state: "visible" });
+  await expect(error).toHaveText(expectedMsg);
+  console.log('✅ Verified mandatory message for "${fieldLabel}": ${expectedMsg}');
+
+}
 
 }
 

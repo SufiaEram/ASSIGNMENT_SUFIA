@@ -7,6 +7,6 @@ module.exports = {
     publishQuiet: true,
     format: ["progress", "json:reports/cucumber-report.json"],
     parallel: 1,
-    tags: "@sanity"
+    tags: "@negative"
   }
 };

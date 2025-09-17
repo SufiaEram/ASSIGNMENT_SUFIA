@@ -18,6 +18,9 @@ const testData = {
   invalidUser: {
     username: "wrong",
     password: "wrong123"
+  },
+  MandatoryErrMsg: {
+    errMsg : "Required"
   }
 };
 

@@ -4,56 +4,57 @@
     "elements": [
       {
         "description": "",
-        "id": "recruitment-functionality;add-a-new-candidate-successfully",
+        "id": "recruitment-functionality;add-a-new-vacancies-successfully",
         "keyword": "Scenario",
-        "line": 5,
-        "name": "Add a new candidate successfully",
+        "line": 11,
+        "name": "Add a new Vacancies successfully",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 522784599
+              "duration": 517027800
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 6,
+            "line": 12,
             "name": "user logged in and navigate to recruitment",
             "match": {
               "location": "features\\step-definitions\\recruitment.steps.js:9"
             },
             "result": {
-              "status": "passed",
-              "duration": 3945485799
+              "status": "failed",
+              "duration": 5025805000,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\Shamim\\Projects\\Safeguard-assignment\\node_modules\\@cucumber\\cucumber\\lib\\time.js:64:20)\n    at listOnTimeout (node:internal/timers:588:17)\n    at process.processTimers (node:internal/timers:523:7)"
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 7,
-            "name": "the user adds a candidate",
+            "line": 13,
+            "name": "the user adds the vacancies",
             "match": {
-              "location": "features\\step-definitions\\recruitment.steps.js:16"
+              "location": "features\\step-definitions\\recruitment.steps.js:25"
             },
             "result": {
-              "status": "passed",
-              "duration": 2375492099
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 8,
-            "name": "the candidate should be added successfully",
+            "line": 14,
+            "name": "verify vacancies is added successfully",
             "match": {
-              "location": "features\\step-definitions\\recruitment.steps.js:21"
+              "location": "features\\step-definitions\\recruitment.steps.js:30"
             },
             "result": {
-              "status": "passed",
-              "duration": 4119361100
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -61,18 +62,22 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 208286299
+              "duration": 219962900
             }
           }
         ],
         "tags": [
           {
             "name": "@sanity",
-            "line": 4
+            "line": 10
           },
           {
             "name": "@positive",
-            "line": 4
+            "line": 10
+          },
+          {
+            "name": "@current",
+            "line": 10
           }
         ],
         "type": "scenario"

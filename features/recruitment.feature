@@ -1,13 +1,13 @@
 # features/recruitment.feature
 Feature: Recruitment functionality
 
- @sanity @positive
+ @sanity @positive 
   Scenario: Add a new candidate successfully
     Given user logged in and navigate to recruitment
     When the user adds a candidate
     Then verify candidate is added successfully
 
- @sanity @positive
+ @sanity @positive @current
   Scenario: Add a new Vacancies successfully
     Given user logged in and navigate to recruitment
     When the user adds the vacancies

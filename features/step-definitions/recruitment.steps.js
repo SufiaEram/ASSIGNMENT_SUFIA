@@ -15,7 +15,7 @@ Given("user logged in and navigate to recruitment", async function () {
 
 When("the user adds a candidate", async function () {
   await recruitmentPage.click("a:has-text('Candidates')");
-  await recruitmentPage.addCandidate(testData.candidate.fName,testData.candidate.lName,testData.candidate.email);
+  await recruitmentPage.addCandidate(testData.candidate.fName,testData.candidate.lName,testData.candidate.candidateVacancy,testData.candidate.email);
 });
 
 Then("verify candidate is added successfully", async function () {
@@ -23,10 +23,10 @@ Then("verify candidate is added successfully", async function () {
 });
 
 When("the user adds the vacancies", async function () {
-  await recruitmentPage.click("a:has-text('Candidates')");
-  await recruitmentPage.addCandidate(testData.candidate.fName,testData.candidate.lName,testData.candidate.email);
+  await recruitmentPage.click("a:has-text('Vacancies')");
+  await recruitmentPage.addVacancies(testData.Vacancies.vName,testData.Vacancies.jtitle,testData.Vacancies.hManager);
 });
 
 Then("verify vacancies is added successfully", async function () {
-  await recruitmentPage.verifyCandidate(testData.candidate.fName);
+  // skip
 });

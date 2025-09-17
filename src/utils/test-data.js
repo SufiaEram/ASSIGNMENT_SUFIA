@@ -5,9 +5,15 @@ const testData = {
     password: "admin123"
   },
   candidate:{
-    fName: "TestFirst",
-    lName: "TestLast",
-    email:"TestFirst.TestLast@gmail.com"
+    fName: "sam",
+    lName: "smith",
+    candidateVacancy: "Software Engineer",
+    email:"sam.smith@gmail.com"
+  },
+  Vacancies:{
+    vName:"testVacancy",
+    jtitle: "Software Engineer",
+    hManager: "sam"
   },
   invalidUser: {
     username: "wrong",

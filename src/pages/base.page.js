@@ -23,6 +23,7 @@ class BasePage {
   async isVisible(selector){
     await this.page.expect(selector).toBeVisible();
   }
+  
 }
 
 module.exports = { BasePage };

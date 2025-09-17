@@ -11,7 +11,6 @@ Given("user logged in and navigate to recruitment", async function () {
   await recruitmentPage.navigateTo("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
   await recruitmentPage.login(testData.validUser.username,testData.validUser.password);
   await recruitmentPage.click("a:has-text('Recruitment')");
-  
 });
 
 When("the user adds a candidate", async function () {
@@ -20,6 +19,6 @@ When("the user adds a candidate", async function () {
 });
 
 Then("the candidate should be added successfully", async function () {
-  await recruitmentPage.isVisible();
+  await recruitmentPage.verifyCandidate(testData.candidate.fName);
 });
 

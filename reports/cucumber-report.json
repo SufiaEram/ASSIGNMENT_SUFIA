@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 544503500
+              "duration": 522784599
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4052770500
+              "duration": 3945485799
             }
           },
           {
@@ -36,11 +36,11 @@
             "line": 7,
             "name": "the user adds a candidate",
             "match": {
-              "location": "features\\step-definitions\\recruitment.steps.js:17"
+              "location": "features\\step-definitions\\recruitment.steps.js:16"
             },
             "result": {
               "status": "passed",
-              "duration": 2305800
+              "duration": 2375492099
             }
           },
           {
@@ -49,11 +49,11 @@
             "line": 8,
             "name": "the candidate should be added successfully",
             "match": {
-              "location": "features\\step-definitions\\recruitment.steps.js:22"
+              "location": "features\\step-definitions\\recruitment.steps.js:21"
             },
             "result": {
               "status": "passed",
-              "duration": 3757799
+              "duration": 4119361100
             }
           },
           {
@@ -61,7 +61,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 187964100
+              "duration": 208286299
             }
           }
         ],

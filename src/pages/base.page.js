@@ -1,4 +1,6 @@
 // src/pages/base.page.js
+const { expect } = require('@playwright/test');
+
 class BasePage {
   constructor(page) {
     this.page = page;
@@ -46,14 +48,12 @@ async selectFromAutocomplete(selector, text) {
   await input.press("Enter");
 }
 
-async validateErrorMsg(fieldLabel, expectedMsg){
-
-  const fieldGroup = this.page.locator('div.oxd-input-group:has(label:text("${fieldLabel}"))');
-  const error = fieldGroup.locator("span.oxd-input-field-error-message");
-  await error.waitFor({ state: "visible" });
-  await expect(error).toHaveText(expectedMsg);
-  console.log('✅ Verified mandatory message for "${fieldLabel}": ${expectedMsg}');
-
+async validateErrorMsg(selector, errorMsg, nth) {
+  const errorLocator = page.locator(selector).nth(nth);
+  // console.log(await errorLocator.textContent());
+  // console.log(errorMsg);
+  await expect(errorLocator).toHaveText(errorMsg);
+  
 }
 
 }

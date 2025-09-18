@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 664369999
+              "duration": 1179062999
             }
           },
           {
@@ -26,8 +26,9 @@
               "location": "features\\step-definitions\\recruitment.steps.js:9"
             },
             "result": {
-              "status": "passed",
-              "duration": 4368063699
+              "status": "failed",
+              "duration": 5023114999,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\Shamim\\Projects\\Safeguard-assignment\\node_modules\\@cucumber\\cucumber\\lib\\time.js:64:20)\n    at listOnTimeout (node:internal/timers:588:17)\n    at process.processTimers (node:internal/timers:523:7)"
             }
           },
           {
@@ -39,22 +40,21 @@
               "location": "features\\step-definitions\\recruitment.steps.js:42"
             },
             "result": {
-              "status": "passed",
-              "duration": 2007039999
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 20,
-            "name": "an error message 'required' should be displayed",
+            "name": "an error message 'Required' should be displayed",
             "match": {
-              "location": "features\\step-definitions\\recruitment.steps.js:51"
+              "location": "features\\step-definitions\\recruitment.steps.js:52"
             },
             "result": {
-              "status": "failed",
-              "duration": 1559099,
-              "error_message": "TypeError: Cannot read properties of undefined (reading 'locator')\n    at World.<anonymous> (C:\\Users\\Shamim\\Projects\\Safeguard-assignment\\features\\step-definitions\\recruitment.steps.js:56:19)"
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -62,7 +62,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 264438799
+              "duration": 404227100
             }
           }
         ],
@@ -74,6 +74,82 @@
           {
             "name": "@negative",
             "line": 16
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "recruitment-functionality;add-candidate-with-invalid-email",
+        "keyword": "Scenario",
+        "line": 23,
+        "name": "Add candidate with invalid email",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 351007399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 24,
+            "name": "user logged in and navigate to recruitment",
+            "match": {
+              "location": "features\\step-definitions\\recruitment.steps.js:9"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5002049799,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\Shamim\\Projects\\Safeguard-assignment\\node_modules\\@cucumber\\cucumber\\lib\\time.js:64:20)\n    at listOnTimeout (node:internal/timers:588:17)\n    at process.processTimers (node:internal/timers:523:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "the recruiter adds a invalid email address",
+            "match": {
+              "location": "features\\step-definitions\\recruitment.steps.js:68"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 26,
+            "name": "an error message 'Expected format: admin@example.com' should be displayed",
+            "match": {
+              "location": "features\\step-definitions\\recruitment.steps.js:61"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 450091700
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 22
+          },
+          {
+            "name": "@negative",
+            "line": 22
           }
         ],
         "type": "scenario"

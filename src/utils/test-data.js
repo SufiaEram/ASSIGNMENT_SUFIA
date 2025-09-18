@@ -20,7 +20,8 @@ const testData = {
     password: "wrong123"
   },
   MandatoryErrMsg: {
-    errMsg : "Required"
+    errMsg : "Required",
+    errMsg2 : "Expected format: admin@example.com"
   }
 };
 

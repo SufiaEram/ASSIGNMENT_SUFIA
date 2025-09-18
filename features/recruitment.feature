@@ -17,11 +17,12 @@ Feature: Recruitment functionality
   Scenario: Add candidate with missing mandatory fields
     Given user logged in and navigate to recruitment
     When the recruiter adds a candidate without mandatory fields
-    Then an error message 'required' should be displayed
+    Then an error message 'Required' should be displayed
 
-#   @regression @negative
-#   Scenario: Add candidate with invalid email
-#     When the recruiter adds a candidate with name "Liam Grey", email "liam.grey@invalid", and job title "QA Engineer"
-#     Then an error message "Enter a valid email address" should be displayed
+  @regression @negative
+  Scenario: Add candidate with invalid email
+    Given user logged in and navigate to recruitment
+    When the recruiter adds a invalid email address
+    Then an error message 'Expected format: admin@example.com' should be displayed
 
 

@@ -4,53 +4,128 @@
     "elements": [
       {
         "description": "",
-        "id": "recruitment-functionality;add-candidate-with-missing-mandatory-fields",
+        "id": "recruitment-functionality;add-a-new-candidate-successfully",
         "keyword": "Scenario",
-        "line": 17,
-        "name": "Add candidate with missing mandatory fields",
+        "line": 5,
+        "name": "Add a new candidate successfully",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1179062999
+              "duration": 602857100
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 18,
+            "line": 6,
             "name": "user logged in and navigate to recruitment",
             "match": {
               "location": "features\\step-definitions\\recruitment.steps.js:9"
             },
             "result": {
-              "status": "failed",
-              "duration": 5023114999,
-              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\Shamim\\Projects\\Safeguard-assignment\\node_modules\\@cucumber\\cucumber\\lib\\time.js:64:20)\n    at listOnTimeout (node:internal/timers:588:17)\n    at process.processTimers (node:internal/timers:523:7)"
+              "status": "passed",
+              "duration": 3690582099
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 19,
-            "name": "the recruiter adds a candidate without mandatory fields",
+            "line": 7,
+            "name": "the user adds a candidate",
             "match": {
-              "location": "features\\step-definitions\\recruitment.steps.js:42"
+              "location": "features\\step-definitions\\recruitment.steps.js:18"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 2023350999
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 20,
-            "name": "an error message 'Required' should be displayed",
+            "line": 8,
+            "name": "verify candidate is added successfully",
             "match": {
-              "location": "features\\step-definitions\\recruitment.steps.js:52"
+              "location": "features\\step-definitions\\recruitment.steps.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4062541499
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 245817700
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@sanity",
+            "line": 4
+          },
+          {
+            "name": "@positive",
+            "line": 4
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "recruitment-functionality;add-a-new-vacancies-successfully",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Add a new Vacancies successfully",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 792212800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "user logged in and navigate to recruitment",
+            "match": {
+              "location": "features\\step-definitions\\recruitment.steps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4172572799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "the user adds the vacancies",
+            "match": {
+              "location": "features\\step-definitions\\recruitment.steps.js:31"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5009767299,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\Shamim\\Projects\\Safeguard-assignment\\node_modules\\@cucumber\\cucumber\\lib\\time.js:64:20)\n    at listOnTimeout (node:internal/timers:588:17)\n    at process.processTimers (node:internal/timers:523:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "verify vacancies is added successfully",
+            "match": {
+              "location": "features\\step-definitions\\recruitment.steps.js:38"
             },
             "result": {
               "status": "skipped",
@@ -62,7 +137,82 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 404227100
+              "duration": 307015800
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@sanity",
+            "line": 10
+          },
+          {
+            "name": "@positive",
+            "line": 10
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "recruitment-functionality;add-candidate-with-missing-mandatory-fields",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "Add candidate with missing mandatory fields",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 484135200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 18,
+            "name": "user logged in and navigate to recruitment",
+            "match": {
+              "location": "features\\step-definitions\\recruitment.steps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3840196800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "the recruiter adds a candidate without mandatory fields",
+            "match": {
+              "location": "features\\step-definitions\\recruitment.steps.js:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1967471900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "an error message 'Required' should be displayed",
+            "match": {
+              "location": "features\\step-definitions\\recruitment.steps.js:52"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20438699
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 173003400
             }
           }
         ],
@@ -90,7 +240,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 351007399
+              "duration": 463277400
             }
           },
           {
@@ -102,9 +252,8 @@
               "location": "features\\step-definitions\\recruitment.steps.js:9"
             },
             "result": {
-              "status": "failed",
-              "duration": 5002049799,
-              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\Shamim\\Projects\\Safeguard-assignment\\node_modules\\@cucumber\\cucumber\\lib\\time.js:64:20)\n    at listOnTimeout (node:internal/timers:588:17)\n    at process.processTimers (node:internal/timers:523:7)"
+              "status": "passed",
+              "duration": 4320862699
             }
           },
           {
@@ -116,8 +265,8 @@
               "location": "features\\step-definitions\\recruitment.steps.js:68"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 2395066400
             }
           },
           {
@@ -129,8 +278,8 @@
               "location": "features\\step-definitions\\recruitment.steps.js:61"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 14438299
             }
           },
           {
@@ -138,7 +287,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 450091700
+              "duration": 188079899
             }
           }
         ],

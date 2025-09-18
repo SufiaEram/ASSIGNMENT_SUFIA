@@ -7,7 +7,7 @@ let context;
 let page;
 
 Before(async () => {
-  browser = await chromium.launch({ headless: true });
+  browser = await chromium.launch({ headless: false });
   context = await browser.newContext();
   page = await context.newPage();
   global.page = page; // make page available globally

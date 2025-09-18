@@ -8,7 +8,6 @@ class RecruitmentPage extends BasePage {
     this.usernameInput = "input[name='username']";
     this.passwordInput = "input[name='password']";
     this.loginBtn = "button[type='submit']";
-    this.errorMsg = ".oxd-alert-content-text"; // correct selector for OrangeHRM
     this.addCandidatebtn = "button:has-text('Add')";
     this.fNameInput ="input[name='firstName']";
     this.lNameInput ="input[name='lastName']";

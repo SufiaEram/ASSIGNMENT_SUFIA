@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 560785500
+              "duration": 490966100
             }
           },
           {
@@ -27,33 +27,33 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1871754199
+              "duration": 1896980400
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 7,
-            "name": "the user enters its registered username and continue",
+            "name": "the user enters its registered username and verify loging in",
             "match": {
               "location": "features\\step-definitions\\bbc-assignment.steps.js:15"
             },
             "result": {
               "status": "passed",
-              "duration": 2537032999
+              "duration": 2412546199
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 8,
-            "name": "verify user is logged in",
+            "name": "logged in user navigates to article with comment and verifies",
             "match": {
               "location": "features\\step-definitions\\bbc-assignment.steps.js:22"
             },
             "result": {
               "status": "passed",
-              "duration": 10041683199
+              "duration": 6275998200
             }
           },
           {
@@ -61,7 +61,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 404336999
+              "duration": 201184000
             }
           }
         ],

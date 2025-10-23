@@ -1,14 +1,14 @@
 Project Structure 
 
-/Safeguard-assignment
+/BBC-ASSIGNMENT
 ├── /features
-│   ├── recruitment.feature       # Gherkin scenarios for recruitment module
+│   ├── bbc-assignment.feature       # Gherkin scenarios for recruitment module
 │   └── step-defination
-│       └── recruitmen.steps.js   #  step implementations
+│       └── bbc-assignment.steps.js   #  step implementations
 ├── /src
 │   ├── pages
 |   |   |──base.page.js          # Page Object Model for basic action across module
-│   │   └── recruitment.page.js  # Page Object Model for recruitment page
+│   │   └── assignmentBBC.page.js  # Page Object Model for recruitment page
 │   └── utils
 │       └── test-data.js         # Sample data for tests
 ├── /reports                     # Test execution reports
@@ -21,8 +21,8 @@ Project Structure
 Installation
 
 Clone the repository:
-git clone https://github.com/SufiaEram/Safeguard-assignment.git
-cd Safeguard-assignment
+git clone https://github.com/SufiaEram/BBC-ASSIGNMENT.git
+cd BBC-ASSIGNMENT
 
 Install dependencies:
 npm install

@@ -1,8 +1,8 @@
 // src/utils/test-data.js
 const testData = {
   validUser: {
-    username: "Admin",
-    password: "admin123"
+    username: "aifusmare@gmail.com",
+    password: "Manchester@1311"
   },
   candidate:{
     fName: "sam",

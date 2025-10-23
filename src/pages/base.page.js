@@ -11,7 +11,7 @@ class BasePage {
   }
 
   async click(selector) {
-    await this.page.locator(selector).click();
+    await this.page.locator(selector).first().click();
   }
 
   async type(selector, text) {
@@ -23,7 +23,7 @@ class BasePage {
   }
 
   async isVisible(selector){
-    await this.page.expect(selector).toBeVisible();
+    await expect(selector).toBeVisible();
   }
   
   async selectDropdown(selector, jobTitle) {

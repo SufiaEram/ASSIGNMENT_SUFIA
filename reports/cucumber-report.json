@@ -4,56 +4,56 @@
     "elements": [
       {
         "description": "",
-        "id": "recruitment-functionality;add-a-new-candidate-successfully",
+        "id": "bbc-assignment;loging-in-and-verifying-homepage-is-vissible",
         "keyword": "Scenario",
         "line": 5,
-        "name": "Add a new candidate successfully",
+        "name": "loging in and verifying homepage is vissible",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 602857100
+              "duration": 560785500
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
             "line": 6,
-            "name": "user logged in and navigate to recruitment",
+            "name": "user navigate to URL and click on sign in button",
             "match": {
-              "location": "features\\step-definitions\\recruitment.steps.js:9"
+              "location": "features\\step-definitions\\bbc-assignment.steps.js:8"
             },
             "result": {
               "status": "passed",
-              "duration": 3690582099
+              "duration": 1871754199
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 7,
-            "name": "the user adds a candidate",
+            "name": "the user enters its registered username and continue",
             "match": {
-              "location": "features\\step-definitions\\recruitment.steps.js:18"
+              "location": "features\\step-definitions\\bbc-assignment.steps.js:15"
             },
             "result": {
               "status": "passed",
-              "duration": 2023350999
+              "duration": 2537032999
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 8,
-            "name": "verify candidate is added successfully",
+            "name": "verify user is logged in",
             "match": {
-              "location": "features\\step-definitions\\recruitment.steps.js:25"
+              "location": "features\\step-definitions\\bbc-assignment.steps.js:22"
             },
             "result": {
               "status": "passed",
-              "duration": 4062541499
+              "duration": 10041683199
             }
           },
           {
@@ -61,7 +61,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 245817700
+              "duration": 404336999
             }
           }
         ],
@@ -73,242 +73,16 @@
           {
             "name": "@positive",
             "line": 4
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "recruitment-functionality;add-a-new-vacancies-successfully",
-        "keyword": "Scenario",
-        "line": 11,
-        "name": "Add a new Vacancies successfully",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 792212800
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 12,
-            "name": "user logged in and navigate to recruitment",
-            "match": {
-              "location": "features\\step-definitions\\recruitment.steps.js:9"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 4172572799
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 13,
-            "name": "the user adds the vacancies",
-            "match": {
-              "location": "features\\step-definitions\\recruitment.steps.js:31"
-            },
-            "result": {
-              "status": "failed",
-              "duration": 5009767299,
-              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\Shamim\\Projects\\Safeguard-assignment\\node_modules\\@cucumber\\cucumber\\lib\\time.js:64:20)\n    at listOnTimeout (node:internal/timers:588:17)\n    at process.processTimers (node:internal/timers:523:7)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 14,
-            "name": "verify vacancies is added successfully",
-            "match": {
-              "location": "features\\step-definitions\\recruitment.steps.js:38"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 307015800
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@sanity",
-            "line": 10
-          },
-          {
-            "name": "@positive",
-            "line": 10
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "recruitment-functionality;add-candidate-with-missing-mandatory-fields",
-        "keyword": "Scenario",
-        "line": 17,
-        "name": "Add candidate with missing mandatory fields",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 484135200
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 18,
-            "name": "user logged in and navigate to recruitment",
-            "match": {
-              "location": "features\\step-definitions\\recruitment.steps.js:9"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3840196800
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 19,
-            "name": "the recruiter adds a candidate without mandatory fields",
-            "match": {
-              "location": "features\\step-definitions\\recruitment.steps.js:42"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1967471900
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 20,
-            "name": "an error message 'Required' should be displayed",
-            "match": {
-              "location": "features\\step-definitions\\recruitment.steps.js:52"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 20438699
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 173003400
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@regression",
-            "line": 16
-          },
-          {
-            "name": "@negative",
-            "line": 16
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "recruitment-functionality;add-candidate-with-invalid-email",
-        "keyword": "Scenario",
-        "line": 23,
-        "name": "Add candidate with invalid email",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 463277400
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 24,
-            "name": "user logged in and navigate to recruitment",
-            "match": {
-              "location": "features\\step-definitions\\recruitment.steps.js:9"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 4320862699
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 25,
-            "name": "the recruiter adds a invalid email address",
-            "match": {
-              "location": "features\\step-definitions\\recruitment.steps.js:68"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2395066400
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 26,
-            "name": "an error message 'Expected format: admin@example.com' should be displayed",
-            "match": {
-              "location": "features\\step-definitions\\recruitment.steps.js:61"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 14438299
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 188079899
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@regression",
-            "line": 22
-          },
-          {
-            "name": "@negative",
-            "line": 22
           }
         ],
         "type": "scenario"
       }
     ],
-    "id": "recruitment-functionality",
+    "id": "bbc-assignment",
     "line": 2,
     "keyword": "Feature",
-    "name": "Recruitment functionality",
+    "name": "bbc assignment",
     "tags": [],
-    "uri": "features\\recruitment.feature"
+    "uri": "features\\bbc-assignmnet.feature"
   }
 ]

@@ -2,13 +2,13 @@ Project Structure
 
 /BBC-ASSIGNMENT
 ├── /features
-│   ├── bbc-assignment.feature       # Gherkin scenarios for recruitment module
+│   ├── assignment.feature       # Gherkin scenarios for recruitment module
 │   └── step-defination
-│       └── bbc-assignment.steps.js   #  step implementations
+│       └── assignment.steps.js   #  step implementations
 ├── /src
 │   ├── pages
 |   |   |──base.page.js          # Page Object Model for basic action across module
-│   │   └── assignmentBBC.page.js  # Page Object Model for recruitment page
+│   │   └── assignment.page.js  # Page Object Model for recruitment page
 │   └── utils
 │       └── test-data.js         # Sample data for tests
 ├── /reports                     # Test execution reports

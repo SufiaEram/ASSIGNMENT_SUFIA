@@ -4,7 +4,7 @@
     "elements": [
       {
         "description": "",
-        "id": "bbc-assignment;loging-in-and-verifying-homepage-is-vissible",
+        "id": "mercator-assignment;loging-in-and-verifying-homepage-is-vissible",
         "keyword": "Scenario",
         "line": 5,
         "name": "loging in and verifying homepage is vissible",
@@ -14,46 +14,46 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 490966100
+              "duration": 682330899
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
             "line": 6,
-            "name": "user navigate to URL and click on sign in button",
+            "name": "Login to the URL with valid userId and password",
             "match": {
-              "location": "features\\step-definitions\\bbc-assignment.steps.js:8"
+              "location": "features\\step-definitions\\assignment.steps.js:8"
             },
             "result": {
               "status": "passed",
-              "duration": 1896980400
+              "duration": 956122500
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 7,
-            "name": "the user enters its registered username and verify loging in",
+            "name": "select the higgest priced item and add to cart",
             "match": {
-              "location": "features\\step-definitions\\bbc-assignment.steps.js:15"
+              "location": "features\\step-definitions\\assignment.steps.js:16"
             },
             "result": {
               "status": "passed",
-              "duration": 2412546199
+              "duration": 212294800
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 8,
-            "name": "logged in user navigates to article with comment and verifies",
+            "name": "verify item is added to cart",
             "match": {
-              "location": "features\\step-definitions\\bbc-assignment.steps.js:22"
+              "location": "features\\step-definitions\\assignment.steps.js:20"
             },
             "result": {
               "status": "passed",
-              "duration": 6275998200
+              "duration": 2074762600
             }
           },
           {
@@ -61,7 +61,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 201184000
+              "duration": 229514099
             }
           }
         ],
@@ -78,11 +78,11 @@
         "type": "scenario"
       }
     ],
-    "id": "bbc-assignment",
+    "id": "mercator-assignment",
     "line": 2,
     "keyword": "Feature",
-    "name": "bbc assignment",
+    "name": "mercator assignment",
     "tags": [],
-    "uri": "features\\bbc-assignmnet.feature"
+    "uri": "features\\assignmnet.feature"
   }
 ]

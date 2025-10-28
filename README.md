@@ -1,6 +1,6 @@
 Project Structure 
 
-/BBC-ASSIGNMENT
+/ASSIGNMENT
 ├── /features
 │   ├── assignment.feature       # Gherkin scenarios for recruitment module
 │   └── step-defination
@@ -21,8 +21,8 @@ Project Structure
 Installation
 
 Clone the repository:
-git clone https://github.com/SufiaEram/BBC-ASSIGNMENT.git
-cd BBC-ASSIGNMENT
+git clone https://github.com/SufiaEram/ASSIGNMENT_SUFIA
+cd ASSIGNMENT_SUFIA
 
 Install dependencies:
 npm install
